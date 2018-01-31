@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="root" hgap="6.0" vgap="2.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+    <children>  
+        <Label text="Código" GridPane.columnIndex="4" />
+        <Text fx:id="id" text="id" GridPane.columnIndex="5" />
+        
+        <Label text="Nome" />
+        <Text fx:id="description" text="description" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+        
+        <Label text="Status" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Text fx:id="status" text="status" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label prefHeight="17.0" text="Duração" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Text fx:id="durationInterval" text="durationInterval" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+        
+        <Label text="Última Reprodução" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Text fx:id="lastPlaybackDate" text="lastPlaybackDate" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label prefHeight="17.0" text="Atualização" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Text fx:id="updateInterval" text="updateInterval" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+        <Label text="Tolerância" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+        <Text fx:id="updateToleranceInterval" text="updateToleranceInterval" GridPane.columnIndex="5" GridPane.rowIndex="2" />        
+              
+        <Label text="Última Atualização" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Text fx:id="lastUpdateDate" text="lastUpdateDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Label text="Última Tentativa Atualização" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Text fx:id="lastUpdateAttemptDate" text="updateToleranceInterval" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+        <Label text="Próxima Atualização" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+        <Text fx:id="nextUpdateDate" text="nextUpdateDate" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+              
+        <Label text="Início" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <Text fx:id="startDate" text="startDate" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label text="Fim" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+        <Text fx:id="endDate" text="endDate" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      
+        <Label text="API" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+        <Text fx:id="integrationApi" text="integrationApi" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+        <Label text="URL" GridPane.rowIndex="6" />
+        <Text fx:id="accessUrl" text="accessUrl" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+        <Label text="Hash" GridPane.rowIndex="8" />
+        <Text fx:id="hash" text="hash" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+        <Label text="Apelido" GridPane.rowIndex="5" />
+        <Text fx:id="alias" text="alias" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+        <Label text="Arquivo" GridPane.rowIndex="7" />
+        <Text fx:id="indexFilePath" text="indexFilePath" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="7" />
+        <JFXCheckBox fx:id="outOfDate" text="Desatualizado" GridPane.rowIndex="9" />
+        <JFXCheckBox fx:id="mustUpdate" text="Deve Atualizar" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <JFXCheckBox fx:id="canPlay" text="Pode Reproduzir" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+        <JFXButton fx:id="doUpdate" text="Atualizar" GridPane.columnIndex="5" GridPane.rowIndex="9" />  
+    </children>
+    <stylesheets>
+        <URL value="@item.css" />
+        <URL value="@../main/main.css" />
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane id="root" styleClass="root" prefHeight="356.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.iandev.midiaindoor.controller.RegistryController">
+    <content>
+        <StackPane prefHeight="755.0" prefWidth="500.0">
+            <children>
+                <VBox styleClass="form">
+                    <children>
+                        <JFXTextField fx:id="deviceCode" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Código Instalação" />
+                        <JFXTextField fx:id="deviceID" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Código Dispositivo" />
+                        <JFXTextField fx:id="deviceDescription" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Descrição" />                
+                        <JFXTextField fx:id="ownerID" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Código Proprietário" />
+                        <JFXTextField fx:id="password" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Senha" />
+                        <JFXTextField fx:id="url" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="URL" />
+                        <JFXButton fx:id="apply" buttonType="RAISED" contentDisplay="CENTER" prefHeight="25.0" prefWidth="480.0" ripplerFill="#5e0b0b" text="Aplicar" />
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </content>
+    <stylesheets>
+        <URL value="@registry.css" />
+        <URL value="@../main/main.css" />
+    </stylesheets>
+</ScrollPane>

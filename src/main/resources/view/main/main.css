@@ -1,0 +1,29 @@
+.root {
+    -fx-fit-to-height: true;
+    -fx-fit-to-width: true;
+}
+
+.side-button {
+    -fx-pref-width: 200px;
+}
+
+.form {
+    -fx-spacing: 20px;
+    -fx-padding: 12px;
+}
+
+.jfx-button {
+    -fx-background-color: #1976D2;
+    -fx-text-fill: white;
+}
+
+.jfx-button:hover {
+    -fx-background-color: #388E3C;
+}
+
+.label {
+    -fx-alignment: center-left;
+    -fx-text-alignment: left;
+    -fx-wrap-text: true;
+    -fx-font-weight: bold;
+}

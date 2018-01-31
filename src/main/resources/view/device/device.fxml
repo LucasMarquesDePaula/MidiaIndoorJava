@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane id="root" styleClass="root" xmlns="http://javafx.com/javafx/8.0.101" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.iandev.midiaindoor.controller.DeviceController">
+   <content>
+      <StackPane>
+          <children>
+              <VBox styleClass="form">
+                  <children>
+                      <JFXTextField fx:id="id" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Código" />
+                      <JFXTextField fx:id="description" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Descrição" />
+                      <JFXTextField fx:id="status" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Status" />
+                      
+                      <JFXTextField fx:id="person" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Proprietário" />
+                      <JFXTextField fx:id="channel" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Canal" />
+                      
+                      <JFXTextField fx:id="timeZone" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Fuso Horário" />
+                      <JFXTextField fx:id="updateInterval" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Tempo Atualização" />
+                      <JFXTextField fx:id="updateToleranceInterval" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Tolerância Desatualização" />
+                      <JFXTextField fx:id="lastUpdateDate" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Última Atualização" />
+                      <JFXTextField fx:id="lastUpdateAttemptDate" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Última Tentativa Atualização" />
+                      <JFXTextField fx:id="nextUpdateDate" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Próxima Atualização" />
+                      <JFXButton fx:id="updateDevice" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#updateDevice" prefHeight="25.0" prefWidth="10000.0" ripplerFill="#5e0b0b" text="Atualizar" textAlignment="CENTER" />                
+                      
+                      <JFXCheckBox fx:id="mustUpdate" text="Deve Atualizar" />
+                      <JFXCheckBox fx:id="outOfDate" text="Desatualizado" />                
+                      
+                      <JFXTextField fx:id="lastAuthenticationDate" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Última Autenticação" />
+                      <JFXTextField fx:id="tokenExpirationInterval" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Duração Token" />
+                      <JFXTextField fx:id="token" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="Token" />
+                      <JFXTextField fx:id="ip" labelFloat="true" prefHeight="25.0" prefWidth="300.0" promptText="IP" />
+                      
+                  </children>
+              </VBox>
+          </children> 
+          <stylesheets>
+              <URL value="@device.css" />
+              <URL value="@../main/main.css" />
+          </stylesheets>
+      </StackPane>
+   </content>
+</ScrollPane>
